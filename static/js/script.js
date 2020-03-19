@@ -41,7 +41,7 @@ function rpsGame(yourChoice)
     result=decideWin(humanChoice,boatChoice);
     console.log(result);
     messages=finalMessages(result);
-    rpsFrontEnd(yourChoice.id,boatChoice,messages);
+    rpsFrontEnd(humanChoice,boatChoice,messages);
 }
 
 function randToRpsInt()
