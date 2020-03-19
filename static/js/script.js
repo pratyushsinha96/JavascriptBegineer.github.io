@@ -38,7 +38,7 @@ function rpsGame(yourChoice)
     humanChoice=yourChoice.id;
     boatChoice=numberToChoice(randToRpsInt());
     console.log(boatChoice);
-    result=decideWinnner(humanChoice,boatChoice);
+    result=decideWin(humanChoice,boatChoice);
     console.log(result);
     messages=finalMessages(result);
     rpsFrontEnd(yourChoice.id,boatChoice,messages);
@@ -54,7 +54,7 @@ function numberToChoice(number)
     return ["rock","paper","scissor"][number];
 }
 
-function decideWinnner(yourChoice,machineChoice)
+function decideWin(yourChoice,machineChoice)
 {
     var rpsDatabase={
         "rock":{"rock":0.5,"scissor":1,"paper":0},
