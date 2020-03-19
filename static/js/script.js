@@ -38,9 +38,9 @@ function rpsGame(yourChoice)
     humanChoice=yourChoice.id;
     boatChoice=numberToChoice(randToRpsInt());
     console.log(boatChoice);
-    result=decideWin(humanChoice,boatChoice);
-    console.log(result);
-    messages=finalMessages(result);
+    results=decideWin(humanChoice,boatChoice);
+    console.log(results);
+    messages=finalMessages(results);
     rpsFrontEnd(humanChoice,boatChoice,messages);
 }
 
